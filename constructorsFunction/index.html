@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body></body>
 </html>
 <script>
-    function obj(){
-        let product={
 
-        }
-        product.name="nike"
-        product.price="56"
-        return product
-    }
-    let res=obj()
-    console.log(res)
+    // normal function
+  function obj() {
+    let product = {};
+    product.name = "nike";
+    product.price = "56";
+    return product;
+  }
+  let res = obj();
+  console.log(res);
 
-    function newProduct(){
-        this.name="nike"
-        this.price="65"
 
-    }
-    let p=new newProduct()
-    console.log(p)
-    
+//   constuctor function
+
+
+  function newProduct() {
+    this.name = "nike";
+    this.price = "65";
+  }
+  let p = new newProduct();
+  console.log(p);
+
+
+//   when we hav eto new product again and again
+
+
+function createProductList(a,b,c){
+    this.name=a;
+    this.price=b;
+    this.brand=c;
+}
+
+let addProduct=new createProductList("shoes","5666","my");
+console.log(addProduct)
 </script>
