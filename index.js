@@ -4,4 +4,11 @@ let obj={
     occu:"software developer"
 }
 delete obj.no
-console.log(obj)
+//console.log(obj)
+
+
+
+
+
+console.log(3+true)
+console.log(3+false)
