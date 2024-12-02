@@ -1,0 +1,34 @@
+<!-- It should take the gender (dropdown) and year of birth as input and show an alert if the user is of the valid legal age to get married or not -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="gender">
+		<option value="">--</option>
+		<option value="male">M</option>
+		<option value="female">F</option>
+	</select>
+    <input type="text" id="year">
+	<button onclick="ageCheck()">Marriage Age</button>
+    <p id="result"></p>
+</body>
+</html>
+<script>
+function ageCheck(){
+    let age=document.getElementById("year").value
+    let gender=document.getElementById("gender").value
+    if(age>=21 && gender=="male"){
+        document.getElementById("result").innerHTML="Allow to Marry";
+    }
+    else if(age>=18 && gender=="female"){
+        document.getElementById("result").innerHTML="Allow to Marry";
+    }
+    else if(age<21 && gender=="male" || age<18 && gender=="female"){
+        document.getElementById("result").innerHTML="Not Allow to Marry";
+    }
+}
+</script>
