@@ -1,0 +1,59 @@
+<!-- When the button Find continent is clicked, you must output an alert on the page which contains the text The continent is <name of continent>
+    Eg: If the input is India -> The continent is Asia
+    If the input is Argentina -> The continent is South America -->
+
+<!-- India
+    United States of America
+    China
+    Nepal
+    Australia
+    France
+    Germany
+    South Africa
+    Nigeria
+    Mexico
+    Argentina
+    Brazil
+    Canada
+    Singapore
+    Sweden -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select id="continent_select">
+      <option value="">-</option>
+      <option value="India">India</option>
+      <option value="Argentina">Argentina</option>
+    </select>
+    <button onclick="findcontinent()">click</button>
+  </body>
+</html>
+<script>
+  function findcontinent() {
+    let contury = document.getElementById("continent_select").value;
+    // switch (contury) {
+    //   case India:
+    //     alert("The continent is Asia");
+    //     break;
+    //  case Argentina:
+    //     alert("The continent is South America");
+    //     break;
+    //     default:
+    //         alert("select contury")
+    // }
+    if (contury === "India") {
+      alert("The continent is Asia");
+    }
+   else if(contury === "Argentina"){
+        alert("The continent is South America")
+    }
+    else{
+        alert("Select Contury")
+    }
+  }
+</script>

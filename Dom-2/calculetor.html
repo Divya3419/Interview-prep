@@ -1,0 +1,35 @@
+File exponent_calculator.html Create a basic exponent calculator that accepts 2
+inputs from the user a and b and prints a * b. in the alert when clicked on
+button When the button Click here to find the exponent! is clicked, you must
+output the value in the p tag. Example: If num1 = 3 and num2=2, your output is 3
+^ 2 = 9. You cannot use the ** operator. You also cannot use the Math.pow
+function. Hint: Use a loop!
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="a" type="text" />
+    <input id="b" type="text" />
+
+    <button onclick="exponent()">exponent</button>
+
+    <p id="result"></p>
+  </body>
+</html>
+<script>
+  function exponent() {
+    let a = document.getElementById("a").value;
+    let b = document.getElementById("b").value;
+    let fact = 1;
+    for (let i = 0; i < b; i++) {
+      fact = fact * a;
+    }
+    console.log(fact);
+    alert(fact);
+  }
+</script>
