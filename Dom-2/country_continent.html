@@ -36,24 +36,15 @@
 <script>
   function findcontinent() {
     let contury = document.getElementById("continent_select").value;
-    // switch (contury) {
-    //   case India:
-    //     alert("The continent is Asia");
-    //     break;
-    //  case Argentina:
-    //     alert("The continent is South America");
-    //     break;
-    //     default:
-    //         alert("select contury")
-    // }
-    if (contury === "India") {
-      alert("The continent is Asia");
-    }
-   else if(contury === "Argentina"){
-        alert("The continent is South America")
-    }
-    else{
-        alert("Select Contury")
+    switch (contury) {
+      case "India":
+        alert("The continent is Asia");
+        break;
+      case "Argentina":
+        alert("The continent is South America");
+        break;
+      default:
+        alert("select contury");
     }
   }
 </script>
