@@ -1,3 +1,8 @@
-let formDetail=localStorage.getItem("todolIst")
+let formDetail=JSON.parse(localStorage.getItem("todoList")) || []
 
-console.log(formDetail)
+formDetail.map((ele)=>{
+    let div=document.createElement("tr")
+    div=ele.name
+
+    document.getElementById("body").append(div)
+})
