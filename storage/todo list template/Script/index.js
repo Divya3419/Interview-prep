@@ -7,7 +7,7 @@ function submitForm(event) {
   let qty = document.getElementById("qty").value;
   let priority = document.getElementById("priority").value;
   let obj = { name, qty, priority };
-
+//no duplicate value
   arr.push(obj);
   localStorage.setItem("todoList", JSON.stringify(arr));
   

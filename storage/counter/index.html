@@ -44,15 +44,15 @@ On refresh the counter should show the data which was already there -->
 </html>
 <script>
   let count = 0;
-  function increase() {
-    //localStorage.setItem("counter", JSON.stringify(count));
+  function increase(e) {
+    localStorage.setItem("counter", JSON.stringify(count));
     let counter = document.getElementById("counter");
     counter.innerHTML = count++;
 
     
   }
-  function decrease() {
-    //localStorage.setItem("counter", JSON.stringify(count));
+  function decrease(e) {
+    localStorage.setItem("counter", JSON.stringify(count));
     let counter = document.getElementById("counter");
     counter.innerHTML = count--;
     
