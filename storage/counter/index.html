@@ -36,25 +36,32 @@ On refresh the counter should show the data which was already there -->
   <body>
     <div id="container">
       <h1>Counter</h1>
-      <h1 id="counter"></h1>
+      <h1 id="counter">0</h1>
       <button onclick="increase()">Increase</button>
-      <button onclick="decrease()">Decrease</button>
+      <button id="dec">Decrease</button>
     </div>
   </body>
 </html>
 <script>
-  let count = 0;
-  function increase(e) {
-    localStorage.setItem("counter", JSON.stringify(count));
+  let count = localStorage.getItem("counter") || 0;
+  document.getElementById("counter").innerHTML=count
+
+
+  function increase() {
+    count++
+    localStorage.setItem("counter", count);
     let counter = document.getElementById("counter");
-    counter.innerHTML = count++;
+    counter.innerHTML = count;
 
     
   }
-  function decrease(e) {
-    localStorage.setItem("counter", JSON.stringify(count));
+
+  document.getElementById("dec").addEventListener("click",decrease)
+  function decrease() {
+    count--
+    localStorage.setItem("counter",count);
     let counter = document.getElementById("counter");
-    counter.innerHTML = count--;
+    counter.innerHTML = count;
     
     
   }
