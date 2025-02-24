@@ -25,6 +25,30 @@
 
 
 
-console.log("2"+1)
-console.log("2"-1)
+// console.log("2"+1)
+// console.log("2"-1)
 
+// console.log(4 + +"4")
+// console.log(8 + "8")
+
+
+// let obj={a:"JavaScript"}
+// let {a,a:b}=obj
+// console.log(a,b)
+
+
+
+// function showResult(marks){
+//     let result=marks ?? "Absent"
+//     console.log(result)
+// }
+
+// showResult(23)
+// showResult(0)
+// showResult(56)
+// showResult()
+
+
+let arr=[1,2,3,4,5]
+arr.pop()
+console.log(arr)
