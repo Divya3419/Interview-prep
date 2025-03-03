@@ -1,5 +1,5 @@
 function outer(){
-    var name="tanya"
+    let name="tanya"
     function inner(){
         console.log(name)
     }
@@ -7,5 +7,6 @@ function outer(){
 }
 
 outer()
+
 
 

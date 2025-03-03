@@ -49,6 +49,21 @@
 // showResult()
 
 
-let arr=[1,2,3,4,5]
-arr.pop()
-console.log(arr)
+// let arr=[1,2,3,4,5]
+// arr.pop()
+// console.log(arr)
+
+// let arr=[1,2,3,4,5]
+// arr.shift()
+// console.log(arr)
+
+
+//console.log(typeof([]))
+
+// immedately invoke funtion expresion
+
+// (function (){
+//     console.log("hii")
+// })()
+
+
