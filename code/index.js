@@ -67,3 +67,30 @@
 // })()
 
 
+// let obj={
+//     name:"rahul",
+//     no:"5555656555",
+//     occu:"software developer"
+// }
+// delete obj.no
+// //console.log(obj)
+
+
+
+
+
+// console.log(2*3+true-3)
+// console.log(2*3+false-3)
+
+
+
+let n1=[1,2,3]
+let n2=[4,5,6]
+console.log(...n1,...n2)
+
+
+function sum(...n){
+    return n
+}
+
+console.log(sum(n1,n2))
