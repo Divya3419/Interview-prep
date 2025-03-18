@@ -84,13 +84,18 @@
 
 
 
-let n1=[1,2,3]
-let n2=[4,5,6]
-console.log(...n1,...n2)
+// let n1=[1,2,3]
+// let n2=[4,5,6]
+// console.log(...n1,...n2)
 
 
-function sum(...n){
-    return n
-}
+// function value(...n){
+//     return n
+// }
 
-console.log(sum(n1,n2))
+// console.log(value(n1,n2))
+
+let arr=[1,2,3]
+console.log(arr[2])
+console.log(arr["2"])
+console.log(arr["02"])

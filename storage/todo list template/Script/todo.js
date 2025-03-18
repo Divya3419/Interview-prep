@@ -1,6 +1,6 @@
 let formDetail = JSON.parse(localStorage.getItem("todoList")) || [];
 
-let CompleteTodo=JSON.parse(localStorage.getItem("competeTodo")) || [];
+let CompleteTodo=JSON.parse(localStorage.getItem("completeTodo")) || [];
 formDetail.map((ele) => {
   let row = document.createElement("tr");
   let col1 = document.createElement("th");
