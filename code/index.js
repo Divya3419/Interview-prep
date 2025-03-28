@@ -84,18 +84,32 @@
 
 
 
-// let n1=[1,2,3]
-// let n2=[4,5,6]
-// console.log(...n1,...n2)
+let n1=[1,2,3]
+let n2=[4,5,6]
+console.log(...n1,...n2)
 
 
-// function value(...n){
-//     return n
-// }
+function value(...n){
+    return n
+}
 
-// console.log(value(n1,n2))
+console.log(value(n1,n2))
 
-let arr=[1,2,3]
-console.log(arr[2])
-console.log(arr["2"])
-console.log(arr["02"])
+// let arr=[1,2,3]
+// console.log(arr[2])
+// console.log(arr["2"])
+// console.log(arr["02"])
+
+
+const person = {
+    firstName: "John",
+    age: 50
+  };
+  
+  // Freeze Object
+  Object.freeze(person)
+  
+  // This will throw an error
+  person.age = 51
+
+  console.log(person)
