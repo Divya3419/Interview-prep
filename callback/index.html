@@ -7,4 +7,16 @@
     display(num);
   }
   a(5, 5, display);
+
+
+  function greet(name, callback) {
+  console.log(`Hello, ${name}!`);
+  callback();
+}
+
+function sayGoodbye() {
+  console.log("Goodbye!");
+}
+
+greet("Alice", sayGoodbye);
 </script>
