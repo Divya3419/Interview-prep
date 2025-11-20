@@ -1,7 +1,20 @@
 setInterval(() => {
-    console.log("hello world")
-}, 2000);
+console.log("hello world")
+}, 3000);
 
-setTimeout(() => {
-    console.log("hello world")
-}, 2000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// setTimeout(() => {
+//     console.log("hello world")
+// }, 3000);

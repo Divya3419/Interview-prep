@@ -28,23 +28,23 @@ console.log(object)
 
 
 
-const a=4**2
-let b=Math.pow(4,2)
+// const a=4**2
+// let b=Math.pow(4,2)
 
-console.log(a)
-console.log(b)
+// console.log(a)
+// console.log(b)
 
 
-let arr=[1,2,3,4,5,6]
+// let arr=[1,2,3,4,5,6]
 
-let res=arr.filter((ele)=>{
-    return ele%2===0
-}).map((ele)=>{
-    return ele*ele
-})
-// using flatMap
-let res1=arr.flatMap((ele)=>{
-    return ele%2===0 ? ele*ele:[]
-})
-console.log(res)
-console.log(res1)
+// let res=arr.filter((ele)=>{
+//     return ele%2===0
+// }).map((ele)=>{
+//     return ele*ele
+// })
+// // using flatMap
+// let res1=arr.flatMap((ele)=>{
+//     return ele%2===0 ? ele*ele:[]
+// })
+// console.log(res)
+// console.log(res1)

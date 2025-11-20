@@ -11,6 +11,23 @@
       p{
         text-align: justify;
       }
+      .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        border:2px solid black;
+        margin: auto;
+        background-color: aqua;
+        resize: both;
+        overflow: scroll;
+        
+      }
+      .inner{
+        background-color: blue;
+        height: 200px;
+        width: 200px;
+        
+      }
     </style>
   </head>
   <body>
@@ -38,5 +55,13 @@
       sapiente facere error esse maxime doloremque? Eum a in deleniti, provident
       neque aliquid modi soluta alias.
     </p>
+    <div class="container">
+      <div class="inner"></div>
+      <div class="inner"></div>
+      <div class="inner"></div>
+      <div class="inner"></div>
+      <div class="inner"></div>
+      <div class="inner"></div>
+    </div>
   </body>
 </html>

@@ -1,5 +1,5 @@
 function outer(){
-    let name="tanya"
+    let name="Tanya mittal"
     function inner(){
         console.log(name)
     }
