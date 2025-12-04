@@ -13,6 +13,7 @@ var str="masai"
 str="ram"
 console.log(str)
 
+
 let admin={
     name:"rita"
 }

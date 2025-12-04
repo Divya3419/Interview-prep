@@ -17,7 +17,7 @@ function findSum(arr){
 
 
 let arr=[1,2,3,4,5]
-let output=arr.reduce((acc,element)=>{
+let output=arr.reduce((acc,element,index)=>{
 acc=acc+element
 return acc
 },0)
